@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelPure Stock Image Processor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Upload Your Images for Processing</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <label for="stock_site">Select Stock Photo Site:</label>
+        <select name="stock_site" id="stock_site">
+            <option value="Adobe Stock">Adobe Stock</option>
+            <option value="Shutterstock">Shutterstock</option>
+        </select>
+        <input type="file" name="file" multiple>
+        <button type="submit">Upload and Process</button>
+    </form>
+</body>
+</html>
